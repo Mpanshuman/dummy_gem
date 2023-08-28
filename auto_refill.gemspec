@@ -5,8 +5,8 @@ require_relative "lib/auto_refill/version"
 Gem::Specification.new do |spec|
   spec.name = "auto_refill"
   spec.version = AutoRefill::VERSION
-  spec.authors = ["TODO: Write your name"]
-  spec.email = ["mp.anshuman@nettantra.net"]
+  spec.authors = ["MP Anshuman"]
+  spec.email = ["mp.anshuman@gmail.com"]
 
   spec.summary = "Dummy gem"
   spec.description = "TODO: Write a longer description or delete this line."
