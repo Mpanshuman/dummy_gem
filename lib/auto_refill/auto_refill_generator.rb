@@ -4,7 +4,7 @@ require 'rails/generators/named_base'
 require 'rails/generators'
 module AutoRefill
   module Generators
-    class AutoRefillGenerator < Rails::Generators::NamedBase
+    class InstallGenerator < Rails::Generators::NamedBase
       include Rails::Generators::ResourceHelpers
 
       namespace "auto_refill"
