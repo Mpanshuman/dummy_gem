@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'rails/generators/named_base'
-
+require 'rails/generators'
 module AutoRefill
   module Generators
     class AutoRefillGenerator < Rails::Generators::NamedBase

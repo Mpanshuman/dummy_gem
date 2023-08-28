@@ -2,7 +2,7 @@
 
 require 'rails/generators/base'
 require 'securerandom'
-
+require 'rails/generators'
 module AutoRefill
   module Generators
 
