@@ -3,6 +3,9 @@
 require_relative "auto_refill/version"
 
 module AutoRefill
-  class Error < StandardError; end
-  # Your code goes here...
+  def check_gem(value)
+    print "----------------------------------------------------------- \n"
+    print "Gem file has been called ; #{value} \n"
+    print "----------------------------------------------------------- \n"
+  end
 end
