@@ -9,7 +9,7 @@ module AutoRefill
     class InstallGenerator < Rails::Generators::Base
       source_root File.expand_path('../templates', __dir__)
       include Rails::Generators::Migration
-      def create_migration
+      def create_migration_auto_refill
         migration_template 'migration.rb', "db/migrate/#{migration_file_name}.rb"
       end
       def migration_file_name
