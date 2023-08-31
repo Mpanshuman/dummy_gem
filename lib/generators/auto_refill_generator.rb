@@ -9,7 +9,7 @@ module ActiveRecord
 
       class_option :primary_key_type, type: :string, desc: "The type for primary key"
 
-      source_root File.expand_path("../templates", __FILE__)
+      source_root File.expand_path("templates", __FILE__)
 
       def copy_auto_refill_migration
         if (behavior == :invoke && model_exists?) || (behavior == :revoke && migration_exists?(table_name))
@@ -24,7 +24,6 @@ module ActiveRecord
       end
 
       def migration_data
-      <<RUBY
         ## Database authenticatable
         t.bigint :order_id,              null: false, default: nil
         t.date :start_date,              null: false, default: nil
@@ -32,7 +31,6 @@ module ActiveRecord
         ## Rememberable
         t.datetime :remember_created_at
 
-      RUBY
       end
     end
   end
