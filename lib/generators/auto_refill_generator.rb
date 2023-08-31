@@ -5,7 +5,7 @@ require 'rails/generators'
 
 module ActiveRecord
   module Generators
-    class AutoRefillGenerator < ActiveRecord::Generators::Base
+    class AutoRefillGenerator < Rails::Generators::Base
       argument :attributes, type: :array, default: [], banner: "field:type field:type"
 
       class_option :primary_key_type, type: :string, desc: "The type for primary key"
