@@ -13,7 +13,7 @@ module AutoRefill
         migration_template 'migration.rb', "db/migrate/#{migration_file_name}.rb"
       end
       def migration_file_name
-        'add_custom_field_to_auto_refill'
+        'create_auto_refill'
       end
       def table_name
         'auto_refill'
