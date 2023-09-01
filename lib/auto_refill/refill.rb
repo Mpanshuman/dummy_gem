@@ -1,4 +1,4 @@
-class AutoRefill::Refill 
+class Refill 
     def initialize(source_id, start_date)
         @source_id = source_id
         @start_date = start_date
