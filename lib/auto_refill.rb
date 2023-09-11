@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 require 'auto_refill/refill'
 require_relative "auto_refill/version"
+require 'auto_refill/engine'
 
 module AutoRefill
   def check_gem(source_id, start_date)
