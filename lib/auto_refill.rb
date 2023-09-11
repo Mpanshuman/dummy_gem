@@ -9,8 +9,8 @@ module AutoRefill
     # refill.create_auto_refill
     order_all = Order.all.last
     refill = Subscription.create!({
-      title: order_all.id,
-      body: 'active',
+      order_id: order_all.id,
+      status: 'active',
     })
     print "----------------------------------- \n"
     print "all order : #{refill} \n"
