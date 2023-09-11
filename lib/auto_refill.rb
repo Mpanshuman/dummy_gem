@@ -8,7 +8,7 @@ module AutoRefill
     # refill = Refill.new(source_id, start_date)
     # refill.create_auto_refill
     order_all = Order.all.last
-    refill = auto_refill.create!({
+    refill = AutoRefill.create!({
       order_id: order_all.id,
       status: 'active',
     })
