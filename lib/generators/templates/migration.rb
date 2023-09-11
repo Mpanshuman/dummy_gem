@@ -1,4 +1,4 @@
-class CreateAutoRefill < ActiveRecord::Migration[<%= Rails::VERSION::MAJOR %>.<%= Rails::VERSION::MINOR %>]
+class CreateSubscriptions < ActiveRecord::Migration[<%= Rails::VERSION::MAJOR %>.<%= Rails::VERSION::MINOR %>]
   def change
     create_table :<%= table_name %> do |t|
     t.bigint :order_id

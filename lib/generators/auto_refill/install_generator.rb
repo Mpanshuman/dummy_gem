@@ -13,10 +13,10 @@ module AutoRefill
         migration_template 'migration.rb', "db/migrate/#{migration_file_name}.rb"
       end
       def migration_file_name
-        'create_auto_refill'
+        'create_subscriptions'
       end
       def table_name
-        'auto_refill'
+        'subscriptions'
       end
       private
       def self.next_migration_number(dirname)
